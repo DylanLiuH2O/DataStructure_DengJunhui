@@ -106,7 +106,7 @@ Vector<T>& Vector<T>::operator=(const Vector<T>& A) {
     if (_elem) {
         delete[] _elem;
     }
-    copyFrom(A._elem, 0, _size);
+    copyFrom(A._elem, 0, A._size);
     return *this;
 }
 template <typename T>
